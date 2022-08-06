@@ -39,6 +39,7 @@ dependencies:
   get: ^4.6.5
   flutter_dotenv: ^5.0.2
   shared_preferences: ^2.0.15
+  cached_network_image: ^3.2.1
   
 
 dev_dependencies:
