@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:pokemon_app/src/moduls/home/controller/home_controller.dart';
 import 'package:pokemon_app/src/moduls/home/screen/home.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -9,11 +11,18 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  final homeController = Get.put(HomeController());
   @override
   void initState() {
+    homeController.getData();
+
+    debugPrint(
+        '===================== get data home screen ${homeController.homeModel.value.name} ');
     Future.delayed(const Duration(seconds: 4), () {
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => const HomeScreen()));
+      homeController.getData().then((value) {
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => const HomeScreen()));
+      });
     });
     super.initState();
   }
