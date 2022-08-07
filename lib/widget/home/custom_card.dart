@@ -93,9 +93,8 @@ class _CustomCardState extends State<CustomCard> {
                     const SizedBox(
                       height: 27,
                     ),
-                    Image.asset(
-                      'assets/images/frog.png',
-                      //'${widget.homeModel!.imageurl}',
+                    Image.network(
+                      '${widget.homeModel!.imageurl}',
                       cacheWidth: 120,
                       cacheHeight: 120,
                     ),
