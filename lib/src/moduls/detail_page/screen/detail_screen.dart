@@ -159,14 +159,17 @@ class _DetailScreenState extends State<DetailScreen> {
                   CustomRow(
                     title: 'Hp',
                     value: widget.homeModel.hp,
+                    wiht: widget.homeModel.hp,
                   ),
                   CustomRow(
                     title: 'Attack',
                     value: widget.homeModel.attack,
+                    wiht: widget.homeModel.attack,
                   ),
                   CustomRow(
                     title: 'Speed',
                     value: widget.homeModel.speed,
+                    wiht: widget.homeModel.speed,
                   ),
                 ],
               ),

@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 class CustomRow extends StatelessWidget {
   final String? title;
   final int? value;
-  const CustomRow({Key? key, this.title, this.value}) : super(key: key);
+  final int? wiht;
+  const CustomRow({Key? key, this.title, this.value, this.wiht = 0})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,6 +45,15 @@ class CustomRow extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     color: const Color(0xff0E1F40),
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(right: 20, left: 20, top: 20),
+                  width: double.parse(wiht.toString()),
+                  height: 10,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.yellow,
                   ),
                 ),
               ],

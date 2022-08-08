@@ -37,19 +37,8 @@ class _HomeScreenState extends State<HomeScreen> {
           'Pokemon App',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
-        // actions: [
-        //   IconButton(
-        //     icon: const Icon(Icons.more_vert),
-        //     onPressed: () {},
-        //   ),
-        // ],
       ),
-      body:
-          // Obx(
-          //   () => homeController.isloading.value
-          //       ? const CircularProgressIndicator()
-          //       :
-          Padding(
+      body: Padding(
         padding: const EdgeInsets.only(top: 20, right: 20, left: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
