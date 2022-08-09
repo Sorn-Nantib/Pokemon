@@ -15,7 +15,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     homeController.getData();
-
     debugPrint('===================== get data home screen ');
     Future.delayed(const Duration(seconds: 4), () {
       homeController.getData().then((value) {

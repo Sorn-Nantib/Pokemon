@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 class CustomRow extends StatelessWidget {
   final String? title;
@@ -38,24 +39,46 @@ class CustomRow extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
-                  margin: const EdgeInsets.only(right: 20, left: 20, top: 20),
-                  width: double.infinity,
-                  height: 10,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xff0E1F40),
+                Padding(
+                  padding: const EdgeInsets.only(right: 20, left: 20, top: 20),
+                  child: StepProgressIndicator(
+                    totalSteps: 100,
+                    currentStep: wiht!,
+                    size: 8,
+                    padding: 0,
+                    selectedColor: Colors.yellow,
+                    unselectedColor: Colors.cyan,
+                    roundedEdges: const Radius.circular(10),
+                    selectedGradientColor: const LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [Colors.yellowAccent, Colors.deepOrange],
+                    ),
+                    unselectedGradientColor: const LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [Colors.black, Colors.blue],
+                    ),
                   ),
                 ),
-                Container(
-                  margin: const EdgeInsets.only(right: 20, left: 20, top: 20),
-                  width: double.parse(wiht.toString()),
-                  height: 10,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.yellow,
-                  ),
-                ),
+                // Container(
+                //   margin: const EdgeInsets.only(right: 20, left: 20, top: 20),
+                //   width: double.infinity,
+                //   height: 10,
+                //   decoration: BoxDecoration(
+                //     borderRadius: BorderRadius.circular(20),
+                //     color: const Color(0xff0E1F40),
+                //   ),
+                // ),
+                // Container(
+                //   margin: const EdgeInsets.only(right: 20, left: 20, top: 20),
+                //   width: double.parse(wiht.toString()),
+                //   height: 10,
+                //   decoration: BoxDecoration(
+                //     borderRadius: BorderRadius.circular(20),
+                //     color: Colors.yellow,
+                //   ),
+                // ),
               ],
             ),
           ),
