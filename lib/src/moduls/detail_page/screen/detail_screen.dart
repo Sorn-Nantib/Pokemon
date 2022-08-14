@@ -5,14 +5,13 @@ import 'package:pokemon_app/widget/detail_page/custom_row_chart.dart';
 
 class DetailScreen extends StatefulWidget {
   final HomeModel homeModel;
-  const DetailScreen({Key? key, required this.homeModel}) : super(key: key);
 
+  const DetailScreen({Key? key, required this.homeModel}) : super(key: key);
   @override
   State<DetailScreen> createState() => _DetailScreenState();
 }
 
 class _DetailScreenState extends State<DetailScreen> {
-  late int index;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

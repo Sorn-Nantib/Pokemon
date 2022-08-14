@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "46750095275",
+    "project_id": "nantib1111",
+    "storage_bucket": "nantib1111.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46750095275:android:9db42db84aa9f83365a4ee",
+        "android_client_info": {
+          "package_name": "com.example.pokemon_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46750095275-40tj35g4ima3s8i201npoa16djaroi4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA61oeQrpEse4WDZhm4G5dZ4sQaBynnSNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46750095275-40tj35g4ima3s8i201npoa16djaroi4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class CustomCardType extends StatelessWidget {
   final String? title;
-
   const CustomCardType({Key? key, this.title}) : super(key: key);
 
   @override

@@ -2,20 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:pokemon_app/src/moduls/home/model/home_model.dart';
 
 class CustomCard extends StatefulWidget {
-  final String? id;
-  final String? imagurl;
-  final String? name;
-  final String? type;
   final HomeModel? homeModel;
   final GestureTapCallback? onTapCard;
-  const CustomCard(
-      {Key? key,
-      this.id,
-      this.imagurl,
-      this.name,
-      this.type,
-      this.homeModel,
-      this.onTapCard})
+  const CustomCard({Key? key, this.homeModel, this.onTapCard})
       : super(key: key);
 
   @override
